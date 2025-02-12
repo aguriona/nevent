@@ -1,6 +1,5 @@
 package com.nevent.challenge.dto;
 
-import com.nevent.challenge.entity.Status;
 import jakarta.validation.Valid;
 import jakarta.validation.constraints.NotBlank;
 import jakarta.validation.constraints.NotEmpty;
