@@ -20,7 +20,7 @@ import org.springframework.data.domain.Pageable;
 @AllArgsConstructor
 public class OrderServiceImpl implements OrderService {
     private final OrderRepository repository;
-    private final OrderMapper mapper; // Inyectar el mapper
+    private final OrderMapper mapper; 
 
     @Override
     public OrderResponse createOrder(OrderRequest request) {
@@ -46,7 +46,7 @@ public class OrderServiceImpl implements OrderService {
 
     @Override
     public List<OrderResponse> getOrdersByStatus(String status) {
-        Status parsedStatus = parseStatus(status); // Validación de estado
+        Status parsedStatus = parseStatus(status);
         return repository.findByStatus(parsedStatus.toString())
                 .stream()
                 .map(mapper::toResponse)
