@@ -1,23 +1,21 @@
-Microservicio RESTful para gestión de pedidos, desarrollado con **Spring Boot** y **MongoDB**. Permite operaciones CRUD, validaciones integradas, y documentación Swagger.
+Microservicio RESTful para gestión de pedidos, desarrollado con **Spring Boot** y **MongoDB**.
 
 ## Características
 
 - ✅ CRUD completo de pedidos
-- ✅ Validación de datos en requests (Bean Validation)
+- ✅ Validación de datos en requests
 - ✅ Manejo centralizado de errores
 - ✅ Documentación Swagger/OpenAPI
-- ✅ Paginación y filtros (estado, fecha)
-- ✅ Pruebas unitarias e integración (Testcontainers)
+- ✅ Paginación
+- ✅ Pruebas unitarias e integración
 - ✅ DTOs para requests/responses
-- ✅ Cálculo automático de subtotal por ítem
 
 ## Requisitos Previos
 
 - Java 17+
-- MongoDB 6.0+ (Docker recomendado)
-- Maven 3.8+
-- Postman o herramienta similar (opcional)
-
+- MongoDB 
+- Maven
+  
 ## Configuración
 
 ### 1. Clonar Repositorio
