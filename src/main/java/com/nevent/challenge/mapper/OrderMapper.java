@@ -41,7 +41,6 @@ public class OrderMapper {
     }
 
     private ItemResponse toItemResponse(Item item) {
-        BigDecimal subtotal = item.getUnitPrice().multiply(BigDecimal.valueOf(item.getQuantity()));
         return new ItemResponse(
                 item.getProduct(),
                 item.getQuantity(),
